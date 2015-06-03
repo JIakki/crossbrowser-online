@@ -1,0 +1,16 @@
+<book  slide-type='simple'> 
+	<topic ng-color='#e46152'>
+		<h3 >Demo a simple leaf</h3>
+	</topic>
+	<content ng-width='450px' 
+			 ng-height='240px'
+			 ng-speed='700'>
+		<leaf ng-repeat='link in [1,2,3]'>
+			<img ng-src='images/{{link}}.jpg' alt="">
+		</leaf>
+	</content>
+	<control ng-color='#e46152'>
+		<span thumb='left' ></span>
+		<span thumb='right'></span>
+	</control>
+</book>

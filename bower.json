@@ -1,0 +1,19 @@
+{
+  "name": "crossbrowser",
+  "version": "0.0.0",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1",
+    "requirejs-domready": "*",
+    "requirejs": "*",
+    "zeroclipboard": "~2.2.0"
+  }
+}

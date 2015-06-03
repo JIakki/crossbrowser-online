@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Css cross-browser compatibility online</title>
+	<meta name="description" content="Css cross-browser compatibility online - It's the tool that makes your code cross-browser compatibility and accelerates your work with css." />
+	<meta name="keywords" content="Css,  cross-browser compatibility,  online css" >
+	<meta name="author" content="DevUp" >
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" >
+
+	<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+	<link href="libs/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+	<link href="style/app.css?2zsz" rel="stylesheet">
+
+</head>
+<body>
+	<header>
+		<h1 class="text-center">Css cross-browser compatibility online</h1>
+	</header>
+	<section ng-controller='compileCtrl'>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 ">
+					<div class="flat welcome">
+						<header>
+							<strong>Welcome!</strong>
+						</header>
+						<section>
+							<p>It's the tool that makes your code cross-browser compatibility and
+							 accelerates your work with css.</p>
+						</section>
+					</div>
+				</div>
+				<div class="col-md-8 ">
+					<div class="flat howTo">
+						<section>
+						<div class="row">
+							<div  class="col-md-4 ex-first">
+								<p>.you-are-awesome {
+									<span class='tab'>color: red;</span>
+									
+								}</p>
+								<p>.you-are-awesome {
+									<span class='tab'>transition: width 2s;</span>
+								}</p>
+							</div>
+							<div class="col-md-2">
+								<span class='nextEx'>=></span>
+							</div>
+							<div class="col-md-6 ex-second">
+								<p>.you-are-awesome { 
+									<span class='tab'>color: red;</span>
+									<span class='tab'>-webkit-transition: width 2s;</span>
+									<span class='tab'>-moz-transition: width 2s;</span>
+									<span class='tab'>-o-transition: width 2s;</span>
+									<span class='tab'>transition: width 2s;</span>
+								}</p>
+							</div>
+						</div>
+						</section>
+						<header>
+							<strong>How it works</strong>
+						</header>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 ">
+					<div class="flat cssCroos">
+						<section>
+							<h2 class="text-center">Input</h2>
+							<textarea ng-model='original' class="col-md-12"></textarea>
+						</section>
+						<footer>
+							<button compile id="compile">Go</button>
+						</footer>
+					</div>
+				</div>
+				<div class="col-md-6 ">
+					<div class="flat cssCroos">
+						<section>
+							<h2 class="text-center">Output</h2>
+							<textarea ng-model='cross' id='cross' class="col-md-12"></textarea>
+						</section>
+						<footer>
+							<button id="copy">Copy</button>
+							<span id='copy-ok' class='glyphicon glyphicon-ok'></span>
+						</footer>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="flat error">
+						<p class="text-center">Found a mistake? write to us!</p>
+						<form id="footer-form" class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3" ng-controller="formCtrl" name="form" ng-submit="submit()">
+							<div class="row">
+								<div class="col-xs-12">
+									<input required="" type="email" ng-model="user.email" class="" placeholder="E-mail">
+								</div>
+								<div class="col-xs-12 ">
+									<textarea required="" class="" ng-model="user.mess" placeholder="Your message"></textarea>	
+								</div>
+								<button form="footer-form" id="send">Send</button>
+
+							</div>
+						</form>
+						<img id="plane" src="images/plane.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="flat">
+						<p itemscope="" itemtype="http://schema.org/Event">© 
+						<span itemprop="startDate" content="2015-04-3">2015</span> 
+						<span itemprop="name"><a target="_black" href="http://devup.com.ua">DevUp</a></span>. All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>   
+	<script type="text/javascript" src='libs/zeroclipboard/dist/ZeroClipboard.js'></script>
+	<script src="libs/requirejs/require.js" data-main="app/main.js"></script>
+	<script type="text/javascript">
+		var client = new ZeroClipboard( document.getElementById("copy") );
+
+		client.on( "ready", function( readyEvent ) {
+
+			client.on( "copy", function( event ) {
+				var clipboard = event.clipboardData;
+
+				document.getElementById('copy-ok').style.display = "initial";
+
+				setTimeout(function () {
+					document.getElementById('copy-ok').style.display = "none" ;
+				}, 1000);
+
+				clipboard.setData('text/plain', document.getElementById('cross').value)
+			});
+		});
+	</script>
+
+</body>
+</html>

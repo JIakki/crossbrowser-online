@@ -1,0 +1,201 @@
+* { 
+	padding: 0;
+}
+
+.row { 
+	margin-top: 20px;
+	margin-right: 0;
+	margin-left: 0;
+}
+
+body { 
+	background: rgb(82, 82, 82);
+	height: initial;
+}
+
+header h1 { 
+	color: rgb(166, 166, 166);
+}
+
+body > section { 
+	margin-top: 50px;
+}
+
+.flat { 
+	box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.26);
+	border-radius: 2px;
+	overflow: hidden;
+	-webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.26);
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.welcome header, .howTo header { 
+	color: white;
+	font-weight: 600;
+	font-size: 20px;
+	padding: 20px;
+	background: #6dc5dd;
+}
+
+.welcome section, .howTo section { 
+	background: #f2f2f2;
+	color: #8a8a8a;
+	padding: 30px 20px 80px 20px;
+}
+
+section .welcome p { 
+	margin-top: 50px;
+	color: #a9a9a9;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+}
+
+.howTo section { 
+	padding: 20px 20px 20px 20px;
+}
+
+.howTo p { 
+	color: #a9a9a9;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+}
+
+.row > div {
+	margin-top: 20px;
+}
+
+textarea { 
+	border: none ;
+	height: 400px;
+	resize: none;
+	padding: 30px;
+	text-rendering: optimizeSpeed;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	-moz-resize: none;
+	outline: none;
+	width:100%;
+}
+
+.cssCroos { 
+	background: #f2f2f2;
+	padding: 5px 20px;
+}
+
+.cssCroos h2 { 
+	font-weight: bold;
+	color: rgb(109, 197, 221);
+}
+
+#compile, #copy , #send { 
+	width: 30%;
+	margin: auto;
+	padding: 15px 0px;
+	background-color: #6dc5dd;
+	border: none;
+	color: white;
+	border-radius: 6px;
+	-webkit-transition: background-color 0.3s ease;
+	-moz-transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;
+	margin-top: 30px;
+	margin-left: 35%;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-o-transition: background-color 0.3s ease;
+	outline: none;
+}
+
+#compile:hover, #copy:hover , #send:hover { 
+	background-color: #e17da2;
+}
+
+.error { 
+	background: #f2f2f2;
+}
+
+.contact textarea { 
+	border: none;
+	height: 200px;
+	resize: none;
+	padding: 30px;
+	text-rendering: optimizeSpeed;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	width: 100%;
+	-moz-resize: none;
+}
+
+#plane { 
+	position: fixed;
+	z-index: 222222;
+	top: 0px;
+	right: -26px;
+	display: none;
+	-webkit-transition: 2s ease;
+	-o-transition: 2s ease;
+	-moz-transition: 2s ease;
+	transition: 2s ease;
+}
+
+.plane-move { 
+	top: -675px !important;
+	right: 529px !important;
+	display: block !important;
+}
+
+.contact form { 
+	padding: 5px;
+}
+
+.contact p { 
+	margin-top: 50px;
+	color: #a9a9a9;
+	font-weight: bold;
+}
+
+.contact input { 
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	border: none;
+	margin-bottom: 10px;
+	outline: none;
+	width: 100%;
+	padding: 13px 30px;
+}
+
+footer .flat { 
+	background: #f2f2f2;
+}
+
+footer p { 
+	text-align: center;
+	margin-top: 50px;
+	color: #a9a9a9;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	padding-bottom: 20px;
+}
+
+.tab { 
+	padding-left: 30px;
+	display: block;
+}
+
+.nextEx { 
+	margin-top: 73px;
+	display: block;
+	font-size: 20px;
+	text-align: center;
+}
+
+.glyphicon.glyphicon-ok {
+	font-size: 50px;
+	position: relative;
+	top: 15px;
+	display: none;
+
+}
